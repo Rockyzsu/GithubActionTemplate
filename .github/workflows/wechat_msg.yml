@@ -6,7 +6,7 @@ name: 微信消息推送
 on:
   schedule:
     # 设置启动时间，为 UTC 时间, UTC23点 对应北京时间早7点
-    - cron : '25 5 * * *'
+    - cron : '0 5 * * *'
   workflow_dispatch:
 
 permissions:
