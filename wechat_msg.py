@@ -2,7 +2,7 @@
 import os
 import requests
 import json
-
+import datetime
 
 # 从测试号信息获取
 userid = os.environ.get("USERID")
@@ -46,7 +46,7 @@ class WeChatNotify:
 
 def main():
     wechat = WeChatNotify()
-    wechat.send_message_via_wechat("Hello, World! From github actions.")
+    wechat.send_message_via_wechat("Hello, World! From github actions.{}".format(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
 
 if __name__ == '__main__':
     main()
