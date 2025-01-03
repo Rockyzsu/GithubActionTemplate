@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import time
 
 url = os.environ.get('TARGET_URL')
 ORIGIN_URL = os.environ.get("ORIGIN_URL")
@@ -84,3 +85,4 @@ headers = {
 for i in range(100):
   response = requests.request("POST", url, headers=headers, data=payload)
   print(response.text)
+  time.sleep(0.5)

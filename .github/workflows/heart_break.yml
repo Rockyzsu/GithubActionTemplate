@@ -30,9 +30,8 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run wechat send message
       run: |
-        python wechat_msg.py
+        python heart_break.py
       env:
         TARGET_URL: ${{ secrets.TARGET_URL }}
-        AGENTID: ${{ secrets.AGENTID }}
-        CORPID: ${{ secrets.CORPID }}
-        CORPSECRET: ${{ secrets.CORPSECRET }}
+        ORIGIN_URL: ${{ secrets.ORIGIN_URL }}
+        REFERER_URL: ${{ secrets.REFERER_URL }}
