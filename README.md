@@ -2,11 +2,6 @@
 
 原理：使用Github Action功能，运行python程序，实现无服务器的免费任务，比如天气推送，薅羊毛，签到
 
-### 视频教程
-
-https://www.bilibili.com/video/BV11e411i7Xx/
-
-作者 **技术爬爬虾** 全网同名，转载请注明作者
 
 ## Part1 构建画爱心为可执行程序
 Fork本项目
